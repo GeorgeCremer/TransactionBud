@@ -40,7 +40,7 @@
 		5E65D47E262C9D3D00375243 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E65D47D262C9D3D00375243 /* UIViewController+Ext.swift */; };
 		5E65D486262CA0BD00375243 /* MenuAlertViewControllerTB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E65D485262CA0BD00375243 /* MenuAlertViewControllerTB.swift */; };
 		5E65D491262CA74F00375243 /* MenuDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E65D490262CA74F00375243 /* MenuDelegate.swift */; };
-		5E65D496262CB00900375243 /* KeysForDemoUnsafe.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5E65D495262CB00900375243 /* KeysForDemoUnsafe.plist */; };
+		5E65D496262CB00900375243 /* ApiEndPoints.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5E65D495262CB00900375243 /* ApiEndPoints.plist */; };
 		5E65D4A8262CBC0100375243 /* TransactionsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E65D4A7262CBC0100375243 /* TransactionsViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -101,7 +101,7 @@
 		5E65D47D262C9D3D00375243 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		5E65D485262CA0BD00375243 /* MenuAlertViewControllerTB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuAlertViewControllerTB.swift; sourceTree = "<group>"; };
 		5E65D490262CA74F00375243 /* MenuDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDelegate.swift; sourceTree = "<group>"; };
-		5E65D495262CB00900375243 /* KeysForDemoUnsafe.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = KeysForDemoUnsafe.plist; path = TransactionBud/Utilities/KeysForDemoUnsafe.plist; sourceTree = SOURCE_ROOT; };
+		5E65D495262CB00900375243 /* ApiEndPoints.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ApiEndPoints.plist; path = TransactionBud/Utilities/ApiEndPoints.plist; sourceTree = SOURCE_ROOT; };
 		5E65D4A7262CBC0100375243 /* TransactionsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,7 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				5E525CB2262AF8BD000601B4 /* ErrorsTB.swift */,
-				5E65D495262CB00900375243 /* KeysForDemoUnsafe.plist */,
+				5E65D495262CB00900375243 /* ApiEndPoints.plist */,
 				5E0DF335262C58780059E835 /* StateHelpers.swift */,
 				5E525D0E262B6C90000601B4 /* ImagesTB.swift */,
 			);
@@ -432,7 +432,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E65D496262CB00900375243 /* KeysForDemoUnsafe.plist in Resources */,
+				5E65D496262CB00900375243 /* ApiEndPoints.plist in Resources */,
 				5E525C6B262AEE7A000601B4 /* LaunchScreen.storyboard in Resources */,
 				5E525C68262AEE7A000601B4 /* Assets.xcassets in Resources */,
 				5E525CE9262B64D8000601B4 /* TransactionCell.xib in Resources */,

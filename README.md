@@ -1,7 +1,3 @@
-#### Setup instructions:
-
-To get the project running, the only file to add is a .plist named KeysForDemoUnsafe.plist. Set the key as budURL and the value as the API endpoint.
-
 #### Thought process around image caching:
 - I decided to split the network manager and the image caching objects. I wanted to fetch the images directly from cellForRowAt, ensuring only required images would attempt to be fetched from either the cache or sever. This seemed difficult to achieve with the MVP model relying on delegation (I would love to know how you would tackle this).
 - The image cache is just a demo; it isn't persisted beyond the app's life cycle but could easily be written to disk. Obviously, there are pros and cons of doing so; would be happy to discuss.

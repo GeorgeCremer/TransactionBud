@@ -85,7 +85,7 @@ class NetworkManager: NetworkManagerProtocol {
 
     private func retrieveBudUrl() -> String? {
         let key: String = "budURL"
-        if let infoPlistPath = Bundle.main.path(forResource: "KeysForDemoUnsafe", ofType: "plist"),
+        if let infoPlistPath = Bundle.main.path(forResource: "ApiEndPoints", ofType: "plist"),
            let dict = NSDictionary(contentsOfFile: infoPlistPath) as? [String: String]
         {
             if let value = dict[key] {
