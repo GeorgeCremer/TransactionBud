@@ -1,0 +1,11 @@
+
+## User settings
+xcuserdata/
+Assets.xcassets/
+project.xcworkspace/
+xcshareddata/
+project.pbxproj
+contents.xcworkspacedata
+TransactionBud.xcodeproj/project.pbxproj
+TransactionBud/Utilities/KeysForDemoUnsafe.plist
+TransactionBud.xcodeproj/project.pbxproj

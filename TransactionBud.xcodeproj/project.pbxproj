@@ -7,14 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E0DF336262C58780059E835 /* StateHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0DF335262C58780059E835 /* StateHelpers.swift */; };
 		5E525C5F262AEE77000601B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E525C5E262AEE77000601B4 /* AppDelegate.swift */; };
 		5E525C61262AEE77000601B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E525C60262AEE77000601B4 /* SceneDelegate.swift */; };
-		5E525C63262AEE77000601B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E525C62262AEE77000601B4 /* ViewController.swift */; };
 		5E525C66262AEE77000601B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E525C64262AEE77000601B4 /* Main.storyboard */; };
 		5E525C68262AEE7A000601B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E525C67262AEE7A000601B4 /* Assets.xcassets */; };
 		5E525C6B262AEE7A000601B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E525C69262AEE7A000601B4 /* LaunchScreen.storyboard */; };
 		5E525C76262AEE7B000601B4 /* TransactionBudTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E525C75262AEE7B000601B4 /* TransactionBudTests.swift */; };
 		5E525C81262AEE7B000601B4 /* TransactionBudUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E525C80262AEE7B000601B4 /* TransactionBudUITests.swift */; };
+		5E525C98262AF06C000601B4 /* TransactionsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E525C97262AF06C000601B4 /* TransactionsPresenter.swift */; };
+		5E525CA0262AF0B2000601B4 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E525C9F262AF0B2000601B4 /* TransactionsViewController.swift */; };
+		5E525CA5262AF0E9000601B4 /* BudAPITransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E525CA4262AF0E9000601B4 /* BudAPITransactionModel.swift */; };
+		5E525CAB262AF7EC000601B4 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E525CAA262AF7EC000601B4 /* NetworkManager.swift */; };
+		5E525CB3262AF8BD000601B4 /* ErrorsTB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E525CB2262AF8BD000601B4 /* ErrorsTB.swift */; };
+		5E525CC1262AFCC1000601B4 /* NetworkManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E525CC0262AFCC1000601B4 /* NetworkManagerDelegate.swift */; };
+		5E525CCF262AFF04000601B4 /* BudTransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E525CCE262AFF04000601B4 /* BudTransactionModel.swift */; };
+		5E525CD7262B01BE000601B4 /* TransactionsPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E525CD6262B01BE000601B4 /* TransactionsPresenterProtocol.swift */; };
+		5E525CE8262B64D8000601B4 /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E525CE6262B64D8000601B4 /* TransactionCell.swift */; };
+		5E525CE9262B64D8000601B4 /* TransactionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E525CE7262B64D8000601B4 /* TransactionCell.xib */; };
+		5E525D0F262B6C90000601B4 /* ImagesTB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E525D0E262B6C90000601B4 /* ImagesTB.swift */; };
+		5E525D20262C2737000601B4 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E525D1F262C2737000601B4 /* ImageCache.swift */; };
+		5E58605D262C5C1B007D3036 /* DeleteButtonBottomTB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E58605C262C5C1B007D3036 /* DeleteButtonBottomTB.swift */; };
+		5E586063262C5E5B007D3036 /* UIApplication+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E586062262C5E5B007D3036 /* UIApplication+Ext.swift */; };
+		5E586087262C8281007D3036 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E586086262C8281007D3036 /* String+Ext.swift */; };
+		5E65D439262C906000375243 /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E65D438262C906000375243 /* NetworkManagerTests.swift */; };
+		5E65D446262C916600375243 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E65D445262C916600375243 /* MockURLProtocol.swift */; };
+		5E65D44E262C923200375243 /* BudTransactionApiStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E65D44D262C923200375243 /* BudTransactionApiStub.swift */; };
+		5E65D45A262C9AFF00375243 /* ContainerViewTB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E65D459262C9AFF00375243 /* ContainerViewTB.swift */; };
+		5E65D460262C9B8800375243 /* ButtonTB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E65D45F262C9B8800375243 /* ButtonTB.swift */; };
+		5E65D468262C9BF000375243 /* TitleLabelTB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E65D467262C9BF000375243 /* TitleLabelTB.swift */; };
+		5E65D46E262C9C3500375243 /* BodyLabelTB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E65D46D262C9C3500375243 /* BodyLabelTB.swift */; };
+		5E65D476262C9C8D00375243 /* AlertViewControllerTB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E65D475262C9C8D00375243 /* AlertViewControllerTB.swift */; };
+		5E65D47E262C9D3D00375243 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E65D47D262C9D3D00375243 /* UIViewController+Ext.swift */; };
+		5E65D486262CA0BD00375243 /* MenuAlertViewControllerTB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E65D485262CA0BD00375243 /* MenuAlertViewControllerTB.swift */; };
+		5E65D491262CA74F00375243 /* MenuDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E65D490262CA74F00375243 /* MenuDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,20 +61,46 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5E0DF335262C58780059E835 /* StateHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateHelpers.swift; sourceTree = "<group>"; };
 		5E525C5B262AEE77000601B4 /* TransactionBud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransactionBud.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E525C5E262AEE77000601B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E525C60262AEE77000601B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5E525C62262AEE77000601B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5E525C65262AEE77000601B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5E525C67262AEE7A000601B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E525C6A262AEE7A000601B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		5E525C6C262AEE7A000601B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E525C6C262AEE7A000601B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = TransactionBud/Support/Info.plist; sourceTree = SOURCE_ROOT; };
 		5E525C71262AEE7A000601B4 /* TransactionBudTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransactionBudTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E525C75262AEE7B000601B4 /* TransactionBudTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionBudTests.swift; sourceTree = "<group>"; };
 		5E525C77262AEE7B000601B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E525C7C262AEE7B000601B4 /* TransactionBudUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransactionBudUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E525C80262AEE7B000601B4 /* TransactionBudUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionBudUITests.swift; sourceTree = "<group>"; };
 		5E525C82262AEE7B000601B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E525C97262AF06C000601B4 /* TransactionsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsPresenter.swift; sourceTree = "<group>"; };
+		5E525C9F262AF0B2000601B4 /* TransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
+		5E525CA4262AF0E9000601B4 /* BudAPITransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudAPITransactionModel.swift; sourceTree = "<group>"; };
+		5E525CAA262AF7EC000601B4 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		5E525CB2262AF8BD000601B4 /* ErrorsTB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorsTB.swift; sourceTree = "<group>"; };
+		5E525CC0262AFCC1000601B4 /* NetworkManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerDelegate.swift; sourceTree = "<group>"; };
+		5E525CCE262AFF04000601B4 /* BudTransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudTransactionModel.swift; sourceTree = "<group>"; };
+		5E525CD6262B01BE000601B4 /* TransactionsPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsPresenterProtocol.swift; sourceTree = "<group>"; };
+		5E525CE6262B64D8000601B4 /* TransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
+		5E525CE7262B64D8000601B4 /* TransactionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionCell.xib; sourceTree = "<group>"; };
+		5E525D0E262B6C90000601B4 /* ImagesTB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesTB.swift; sourceTree = "<group>"; };
+		5E525D1F262C2737000601B4 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		5E58605C262C5C1B007D3036 /* DeleteButtonBottomTB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteButtonBottomTB.swift; sourceTree = "<group>"; };
+		5E586062262C5E5B007D3036 /* UIApplication+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Ext.swift"; sourceTree = "<group>"; };
+		5E586086262C8281007D3036 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		5E65D438262C906000375243 /* NetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
+		5E65D445262C916600375243 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
+		5E65D44D262C923200375243 /* BudTransactionApiStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudTransactionApiStub.swift; sourceTree = "<group>"; };
+		5E65D459262C9AFF00375243 /* ContainerViewTB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewTB.swift; sourceTree = "<group>"; };
+		5E65D45F262C9B8800375243 /* ButtonTB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTB.swift; sourceTree = "<group>"; };
+		5E65D467262C9BF000375243 /* TitleLabelTB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabelTB.swift; sourceTree = "<group>"; };
+		5E65D46D262C9C3500375243 /* BodyLabelTB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyLabelTB.swift; sourceTree = "<group>"; };
+		5E65D475262C9C8D00375243 /* AlertViewControllerTB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewControllerTB.swift; sourceTree = "<group>"; };
+		5E65D47D262C9D3D00375243 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		5E65D485262CA0BD00375243 /* MenuAlertViewControllerTB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuAlertViewControllerTB.swift; sourceTree = "<group>"; };
+		5E65D490262CA74F00375243 /* MenuDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +128,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E0DF33A262C58850059E835 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5E525CB2262AF8BD000601B4 /* ErrorsTB.swift */,
+				5E0DF335262C58780059E835 /* StateHelpers.swift */,
+				5E525D0E262B6C90000601B4 /* ImagesTB.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		5E525C52262AEE77000601B4 = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +161,16 @@
 		5E525C5D262AEE77000601B4 /* TransactionBud */ = {
 			isa = PBXGroup;
 			children = (
-				5E525C5E262AEE77000601B4 /* AppDelegate.swift */,
-				5E525C60262AEE77000601B4 /* SceneDelegate.swift */,
-				5E525C62262AEE77000601B4 /* ViewController.swift */,
-				5E525C64262AEE77000601B4 /* Main.storyboard */,
-				5E525C67262AEE7A000601B4 /* Assets.xcassets */,
-				5E525C69262AEE7A000601B4 /* LaunchScreen.storyboard */,
-				5E525C6C262AEE7A000601B4 /* Info.plist */,
+				5E525CA9262AF7D1000601B4 /* Managers */,
+				5E525C96262AF042000601B4 /* Presenter */,
+				5E525C95262AF02F000601B4 /* View */,
+				5E525C94262AF027000601B4 /* Model */,
+				5E525CE4262B64B3000601B4 /* UI */,
+				5E586097262C8DF8007D3036 /* Delegates */,
+				5E586098262C8E07007D3036 /* Protocols */,
+				5E0DF33A262C58850059E835 /* Utilities */,
+				5E586085262C826E007D3036 /* Extensions */,
+				5E586099262C8E40007D3036 /* Support */,
 			);
 			path = TransactionBud;
 			sourceTree = "<group>";
@@ -114,7 +179,10 @@
 			isa = PBXGroup;
 			children = (
 				5E525C75262AEE7B000601B4 /* TransactionBudTests.swift */,
+				5E65D438262C906000375243 /* NetworkManagerTests.swift */,
 				5E525C77262AEE7B000601B4 /* Info.plist */,
+				5E65D445262C916600375243 /* MockURLProtocol.swift */,
+				5E65D44D262C923200375243 /* BudTransactionApiStub.swift */,
 			);
 			path = TransactionBudTests;
 			sourceTree = "<group>";
@@ -126,6 +194,128 @@
 				5E525C82262AEE7B000601B4 /* Info.plist */,
 			);
 			path = TransactionBudUITests;
+			sourceTree = "<group>";
+		};
+		5E525C94262AF027000601B4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5E525CA4262AF0E9000601B4 /* BudAPITransactionModel.swift */,
+				5E525CCE262AFF04000601B4 /* BudTransactionModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5E525C95262AF02F000601B4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5E525C9F262AF0B2000601B4 /* TransactionsViewController.swift */,
+				5E65D475262C9C8D00375243 /* AlertViewControllerTB.swift */,
+				5E65D485262CA0BD00375243 /* MenuAlertViewControllerTB.swift */,
+				5E525C64262AEE77000601B4 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5E525C96262AF042000601B4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5E525C97262AF06C000601B4 /* TransactionsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5E525CA9262AF7D1000601B4 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				5E525CAA262AF7EC000601B4 /* NetworkManager.swift */,
+				5E525D1F262C2737000601B4 /* ImageCache.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		5E525CE4262B64B3000601B4 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5E586052262C5BA8007D3036 /* Buttons */,
+				5E525CE5262B64B8000601B4 /* Cells */,
+				5E65D45E262C9B0F00375243 /* Views */,
+				5E65D46C262C9BF500375243 /* Labels */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		5E525CE5262B64B8000601B4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5E525CE6262B64D8000601B4 /* TransactionCell.swift */,
+				5E525CE7262B64D8000601B4 /* TransactionCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		5E586052262C5BA8007D3036 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				5E58605C262C5C1B007D3036 /* DeleteButtonBottomTB.swift */,
+				5E65D45F262C9B8800375243 /* ButtonTB.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		5E586085262C826E007D3036 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5E586062262C5E5B007D3036 /* UIApplication+Ext.swift */,
+				5E65D47D262C9D3D00375243 /* UIViewController+Ext.swift */,
+				5E586086262C8281007D3036 /* String+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5E586097262C8DF8007D3036 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				5E525CC0262AFCC1000601B4 /* NetworkManagerDelegate.swift */,
+				5E65D490262CA74F00375243 /* MenuDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		5E586098262C8E07007D3036 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				5E525CD6262B01BE000601B4 /* TransactionsPresenterProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		5E586099262C8E40007D3036 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				5E525C5E262AEE77000601B4 /* AppDelegate.swift */,
+				5E525C60262AEE77000601B4 /* SceneDelegate.swift */,
+				5E525C67262AEE7A000601B4 /* Assets.xcassets */,
+				5E525C69262AEE7A000601B4 /* LaunchScreen.storyboard */,
+				5E525C6C262AEE7A000601B4 /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		5E65D45E262C9B0F00375243 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5E65D459262C9AFF00375243 /* ContainerViewTB.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5E65D46C262C9BF500375243 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				5E65D467262C9BF000375243 /* TitleLabelTB.swift */,
+				5E65D46D262C9C3500375243 /* BodyLabelTB.swift */,
+			);
+			path = Labels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +423,7 @@
 			files = (
 				5E525C6B262AEE7A000601B4 /* LaunchScreen.storyboard in Resources */,
 				5E525C68262AEE7A000601B4 /* Assets.xcassets in Resources */,
+				5E525CE9262B64D8000601B4 /* TransactionCell.xib in Resources */,
 				5E525C66262AEE77000601B4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,9 +449,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E525C63262AEE77000601B4 /* ViewController.swift in Sources */,
+				5E586063262C5E5B007D3036 /* UIApplication+Ext.swift in Sources */,
+				5E525CAB262AF7EC000601B4 /* NetworkManager.swift in Sources */,
+				5E525D0F262B6C90000601B4 /* ImagesTB.swift in Sources */,
+				5E586087262C8281007D3036 /* String+Ext.swift in Sources */,
+				5E65D486262CA0BD00375243 /* MenuAlertViewControllerTB.swift in Sources */,
+				5E525CE8262B64D8000601B4 /* TransactionCell.swift in Sources */,
+				5E65D47E262C9D3D00375243 /* UIViewController+Ext.swift in Sources */,
+				5E0DF336262C58780059E835 /* StateHelpers.swift in Sources */,
+				5E65D460262C9B8800375243 /* ButtonTB.swift in Sources */,
+				5E65D491262CA74F00375243 /* MenuDelegate.swift in Sources */,
+				5E525CC1262AFCC1000601B4 /* NetworkManagerDelegate.swift in Sources */,
+				5E525CB3262AF8BD000601B4 /* ErrorsTB.swift in Sources */,
+				5E525CCF262AFF04000601B4 /* BudTransactionModel.swift in Sources */,
+				5E65D46E262C9C3500375243 /* BodyLabelTB.swift in Sources */,
 				5E525C5F262AEE77000601B4 /* AppDelegate.swift in Sources */,
 				5E525C61262AEE77000601B4 /* SceneDelegate.swift in Sources */,
+				5E525CA0262AF0B2000601B4 /* TransactionsViewController.swift in Sources */,
+				5E65D45A262C9AFF00375243 /* ContainerViewTB.swift in Sources */,
+				5E525C98262AF06C000601B4 /* TransactionsPresenter.swift in Sources */,
+				5E525CA5262AF0E9000601B4 /* BudAPITransactionModel.swift in Sources */,
+				5E525CD7262B01BE000601B4 /* TransactionsPresenterProtocol.swift in Sources */,
+				5E65D468262C9BF000375243 /* TitleLabelTB.swift in Sources */,
+				5E525D20262C2737000601B4 /* ImageCache.swift in Sources */,
+				5E65D476262C9C8D00375243 /* AlertViewControllerTB.swift in Sources */,
+				5E58605D262C5C1B007D3036 /* DeleteButtonBottomTB.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +481,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E65D446262C916600375243 /* MockURLProtocol.swift in Sources */,
 				5E525C76262AEE7B000601B4 /* TransactionBudTests.swift in Sources */,
+				5E65D439262C906000375243 /* NetworkManagerTests.swift in Sources */,
+				5E65D44E262C923200375243 /* BudTransactionApiStub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,7 +654,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 39K8Q3VFHM;
-				INFOPLIST_FILE = TransactionBud/Info.plist;
+				INFOPLIST_FILE = TransactionBud/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,7 +673,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 39K8Q3VFHM;
-				INFOPLIST_FILE = TransactionBud/Info.plist;
+				INFOPLIST_FILE = TransactionBud/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
