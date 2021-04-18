@@ -11,3 +11,4 @@
 - Handle errors in ImageCache.retrieveImage(); at the moment, I just send back a placeholder image but don't trigger or log an alert if something goes wrong.
 - When deleting the cells, I kept track of the transaction IDs to filter out unwanted results from the API (whilst leaving the API data intact and not needing to delete at the source). At the moment transactionIdToHide: [String] = [] is written to, but is not yet used to filter.
 - Testing needs to be expanded but hopefully is enough for the scope of this task. 
+- Add activity indicator whilst fetching data
