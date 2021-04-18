@@ -20,7 +20,12 @@ class NetworkManager: NetworkManagerProtocol {
     }
 
     func retrieveTransactions(completed: @escaping (Result<[BudTransactionModel], ErrorsTB>) -> Void) {
-        guard let url = URL(string: "http://www.mocky.io/v2/5b36325b340000f60cf88903") else {
+        guard let urlPath = retrieveBudUrl() else {
+            completed(.failure(.unableToRetrieveUrlPath))
+            return
+        }
+
+        guard let url = URL(string: urlPath) else {
             completed(.failure(.unableToCompleteNetworkRequestURLError))
             return
         }
@@ -50,7 +55,6 @@ class NetworkManager: NetworkManagerProtocol {
                     return
                 }
 
-                print(dataArray)
                 var transactions: [BudTransactionModel] = []
 
                 for result in dataArray {
@@ -77,5 +81,17 @@ class NetworkManager: NetworkManagerProtocol {
             }
         }
         task.resume()
+    }
+
+    private func retrieveBudUrl() -> String? {
+        let key: String = "budURL"
+        if let infoPlistPath = Bundle.main.path(forResource: "KeysForDemoUnsafe", ofType: "plist"),
+           let dict = NSDictionary(contentsOfFile: infoPlistPath) as? [String: String]
+        {
+            if let value = dict[key] {
+                return value
+            }
+        }
+        return nil
     }
 }

@@ -8,7 +8,6 @@
 import UIKit
 
 class TransactionsPresenter: TransactionsPresenterProtocol {
-  
     private var menuDelegate: MenuDelegate!
     private var networkManager: NetworkManagerProtocol!
     private weak var networkManagerDelegate: NetworkManagerDelegate?
@@ -18,6 +17,8 @@ class TransactionsPresenter: TransactionsPresenterProtocol {
         self.networkManagerDelegate = networkManagerDelegate
         self.menuDelegate = menuDelegate
     }
+
+    func onViewDidLoad() {}
 
     func retrieveTransactions() {
         networkManager.retrieveTransactions { result in

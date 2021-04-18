@@ -11,12 +11,11 @@ struct ImageCache {
     static let shared = ImageCache()
     var imageCache = NSCache<NSString, UIImage>()
 
-    func retrieveImage(withUrl urlString: String, tag: String, complete: @escaping (_ image: UIImage) -> Void) {
-        // TODO: Handle errors + move to separate object
+    func retrieveImage(withUrl urlString: String, tag _: String, complete: @escaping (_ image: UIImage) -> Void) {
+        // TODO: Handle errors + persist cache
         guard let url = URL(string: urlString) else { return }
 
         if let image = imageCache.object(forKey: urlString as NSString) {
-            print("already cached image price: \(tag) ")
             complete(image)
             return
         }
@@ -24,14 +23,12 @@ struct ImageCache {
         let task = URLSession.shared.dataTask(with: url) { data, _, error in
 
             if let _ = error {
-                print("error caching image price: \(tag) ")
                 complete(Images.transactionPlaceHolder!)
                 return
             }
 
             if let image = UIImage(data: data!) {
                 self.imageCache.setObject(image, forKey: urlString as NSString)
-                print("successfully cached image price: \(tag), forKey: \(urlString)")
                 complete(image)
             }
         }

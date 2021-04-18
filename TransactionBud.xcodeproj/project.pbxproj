@@ -13,7 +13,6 @@
 		5E525C66262AEE77000601B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E525C64262AEE77000601B4 /* Main.storyboard */; };
 		5E525C68262AEE7A000601B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E525C67262AEE7A000601B4 /* Assets.xcassets */; };
 		5E525C6B262AEE7A000601B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E525C69262AEE7A000601B4 /* LaunchScreen.storyboard */; };
-		5E525C76262AEE7B000601B4 /* TransactionBudTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E525C75262AEE7B000601B4 /* TransactionBudTests.swift */; };
 		5E525C81262AEE7B000601B4 /* TransactionBudUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E525C80262AEE7B000601B4 /* TransactionBudUITests.swift */; };
 		5E525C98262AF06C000601B4 /* TransactionsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E525C97262AF06C000601B4 /* TransactionsPresenter.swift */; };
 		5E525CA0262AF0B2000601B4 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E525C9F262AF0B2000601B4 /* TransactionsViewController.swift */; };
@@ -41,6 +40,8 @@
 		5E65D47E262C9D3D00375243 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E65D47D262C9D3D00375243 /* UIViewController+Ext.swift */; };
 		5E65D486262CA0BD00375243 /* MenuAlertViewControllerTB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E65D485262CA0BD00375243 /* MenuAlertViewControllerTB.swift */; };
 		5E65D491262CA74F00375243 /* MenuDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E65D490262CA74F00375243 /* MenuDelegate.swift */; };
+		5E65D496262CB00900375243 /* KeysForDemoUnsafe.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5E65D495262CB00900375243 /* KeysForDemoUnsafe.plist */; };
+		5E65D4A8262CBC0100375243 /* TransactionsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E65D4A7262CBC0100375243 /* TransactionsViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,7 +71,6 @@
 		5E525C6A262AEE7A000601B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E525C6C262AEE7A000601B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = TransactionBud/Support/Info.plist; sourceTree = SOURCE_ROOT; };
 		5E525C71262AEE7A000601B4 /* TransactionBudTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransactionBudTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E525C75262AEE7B000601B4 /* TransactionBudTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionBudTests.swift; sourceTree = "<group>"; };
 		5E525C77262AEE7B000601B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E525C7C262AEE7B000601B4 /* TransactionBudUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransactionBudUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E525C80262AEE7B000601B4 /* TransactionBudUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionBudUITests.swift; sourceTree = "<group>"; };
@@ -101,6 +101,8 @@
 		5E65D47D262C9D3D00375243 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		5E65D485262CA0BD00375243 /* MenuAlertViewControllerTB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuAlertViewControllerTB.swift; sourceTree = "<group>"; };
 		5E65D490262CA74F00375243 /* MenuDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDelegate.swift; sourceTree = "<group>"; };
+		5E65D495262CB00900375243 /* KeysForDemoUnsafe.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = KeysForDemoUnsafe.plist; path = TransactionBud/Utilities/KeysForDemoUnsafe.plist; sourceTree = SOURCE_ROOT; };
+		5E65D4A7262CBC0100375243 /* TransactionsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				5E525CB2262AF8BD000601B4 /* ErrorsTB.swift */,
+				5E65D495262CB00900375243 /* KeysForDemoUnsafe.plist */,
 				5E0DF335262C58780059E835 /* StateHelpers.swift */,
 				5E525D0E262B6C90000601B4 /* ImagesTB.swift */,
 			);
@@ -178,11 +181,10 @@
 		5E525C74262AEE7B000601B4 /* TransactionBudTests */ = {
 			isa = PBXGroup;
 			children = (
-				5E525C75262AEE7B000601B4 /* TransactionBudTests.swift */,
+				5E65D4A7262CBC0100375243 /* TransactionsViewControllerTests.swift */,
 				5E65D438262C906000375243 /* NetworkManagerTests.swift */,
 				5E525C77262AEE7B000601B4 /* Info.plist */,
-				5E65D445262C916600375243 /* MockURLProtocol.swift */,
-				5E65D44D262C923200375243 /* BudTransactionApiStub.swift */,
+				5E65D4A6262CBBD200375243 /* Mocks */,
 			);
 			path = TransactionBudTests;
 			sourceTree = "<group>";
@@ -318,6 +320,15 @@
 			path = Labels;
 			sourceTree = "<group>";
 		};
+		5E65D4A6262CBBD200375243 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				5E65D44D262C923200375243 /* BudTransactionApiStub.swift */,
+				5E65D445262C916600375243 /* MockURLProtocol.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -421,6 +432,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E65D496262CB00900375243 /* KeysForDemoUnsafe.plist in Resources */,
 				5E525C6B262AEE7A000601B4 /* LaunchScreen.storyboard in Resources */,
 				5E525C68262AEE7A000601B4 /* Assets.xcassets in Resources */,
 				5E525CE9262B64D8000601B4 /* TransactionCell.xib in Resources */,
@@ -482,9 +494,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E65D446262C916600375243 /* MockURLProtocol.swift in Sources */,
-				5E525C76262AEE7B000601B4 /* TransactionBudTests.swift in Sources */,
 				5E65D439262C906000375243 /* NetworkManagerTests.swift in Sources */,
 				5E65D44E262C923200375243 /* BudTransactionApiStub.swift in Sources */,
+				5E65D4A8262CBC0100375243 /* TransactionsViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

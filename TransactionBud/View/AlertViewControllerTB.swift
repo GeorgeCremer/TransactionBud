@@ -8,9 +8,8 @@
 import UIKit
 
 class AlertViewControllerTB: UIViewController {
-
     let containerView = ContainerViewTB()
-    let titleLabel =   TitleLabelTB(textAlignment: .center, fontSize: 20)
+    let titleLabel = TitleLabelTB(textAlignment: .center, fontSize: 20)
     let messageLabel = BodyLabelTB(textAlignment: .center)
     let actionButton = ButtonTB(backgroundColor: .black, title: "OK")
 
@@ -69,7 +68,7 @@ class AlertViewControllerTB: UIViewController {
     func configureActionButton() {
         actionButton.setTitle(buttonTitle ?? "OK", for: .normal)
         actionButton.addTarget(self, action: #selector(dismissVC), for: .touchUpInside)
-        
+
         NSLayoutConstraint.activate([
             actionButton.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -padding),
             actionButton.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: padding),
@@ -93,5 +92,4 @@ class AlertViewControllerTB: UIViewController {
     @objc func dismissVC() {
         dismiss(animated: true)
     }
-
 }

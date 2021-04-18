@@ -7,9 +7,8 @@
 
 import UIKit
 
-
 protocol TransactionsPresenterProtocol: AnyObject {
     init(networkManager: NetworkManagerProtocol, networkManagerDelegate: NetworkManagerDelegate, menuDelegate: MenuDelegate)
     func retrieveTransactions()
-    
+    func onViewDidLoad()
 }

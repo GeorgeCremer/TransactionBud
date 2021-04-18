@@ -11,7 +11,7 @@
         <!--Transactions View Controller-->
         <scene sceneID="3mX-QC-6Ey">
             <objects>
-                <viewController id="9F8-xU-aw0" customClass="TransactionsViewController" customModule="TransactionBud" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TransactionsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9F8-xU-aw0" customClass="TransactionsViewController" customModule="TransactionBud" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="69B-af-43V">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

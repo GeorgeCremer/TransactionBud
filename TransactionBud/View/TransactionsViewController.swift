@@ -8,11 +8,10 @@
 import UIKit
 
 class TransactionsViewController: UIViewController, UINavigationControllerDelegate {
-    
     @IBOutlet var tableView: UITableView!
-    @IBOutlet weak var rightBarButtonItem: UIBarButtonItem!
-    @IBOutlet weak var leftBarButtonItem: UIBarButtonItem!
-    
+    @IBOutlet var rightBarButtonItem: UIBarButtonItem!
+    @IBOutlet var leftBarButtonItem: UIBarButtonItem!
+
     private var transactionsPresenter: TransactionsPresenter?
     private var transactions: [BudTransactionModel] = []
 
@@ -30,13 +29,15 @@ class TransactionsViewController: UIViewController, UINavigationControllerDelega
         configDeleteButton()
     }
 
-    func configNavBar() {
-        rightBarButtonItem.tintColor = .white
-        rightBarButtonItem.title = EditButtonStates.edit.title
-        
-        leftBarButtonItem.image = UIImage(systemName: "line.horizontal.3")
-        leftBarButtonItem.tintColor = .white
+    override func viewWillAppear(_: Bool) {
+        transactionsPresenter?.retrieveTransactions()
+    }
 
+    func configNavBar() {
+        rightBarButtonItem.title = EditButtonStates.edit.title
+        leftBarButtonItem.image = Images.menu
+
+        navigationController?.navigationBar.tintColor = .white
         navigationItem.title = "Transactions"
     }
 
@@ -89,24 +90,13 @@ class TransactionsViewController: UIViewController, UINavigationControllerDelega
         }
     }
 
-    func showHideDeleteButton() {
-        let constraintConstant = tableView.isEditing ? -deleteButton.frame.height : 0
-        deleteButtonTopAnchor.constant = constraintConstant
-
-        UIView.animate(withDuration: 0.3) {
-            self.view.layoutIfNeeded()
-        }
-    }
-
     @IBAction func rightBarButtonPressed(_ sender: UIBarButtonItem) {
         tableView.setEditing(!tableView.isEditing, animated: true)
         sender.title = tableView.isEditing ? EditButtonStates.done.title : EditButtonStates.edit.title
-        showHideDeleteButton()
+        animateRemoveButton()
     }
-    
-    
-    
-    @IBAction func leftBarButtonPressed(_ sender: UIBarButtonItem) {
+
+    @IBAction func leftBarButtonPressed(_: UIBarButtonItem) {
         DispatchQueue.main.async {
             let alertVC = MenuAlertViewControllerTB()
             alertVC.menuDelegate = self
@@ -115,12 +105,15 @@ class TransactionsViewController: UIViewController, UINavigationControllerDelega
             self.present(alertVC, animated: true)
         }
     }
-    
 
-    override func viewWillAppear(_: Bool) {
-        transactionsPresenter?.retrieveTransactions()
+    func animateRemoveButton() {
+        let constraintConstant = tableView.isEditing ? -deleteButton.frame.height : 0
+        deleteButtonTopAnchor.constant = constraintConstant
+
+        UIView.animate(withDuration: 0.3) {
+            self.view.layoutIfNeeded()
+        }
     }
-    
 }
 
 extension TransactionsViewController: NetworkManagerDelegate {
@@ -138,7 +131,6 @@ extension TransactionsViewController: NetworkManagerDelegate {
 
 extension TransactionsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_: UITableView, numberOfRowsInSection _: Int) -> Int {
-        print("transactions.count = \(transactions.count)")
         return transactions.count
     }
 
@@ -168,25 +160,22 @@ extension TransactionsViewController: UITableViewDelegate, UITableViewDataSource
 }
 
 extension TransactionsViewController: MenuDelegate {
-   
     func resetPage() {
-            if tableView.isEditing {
-                tableView.setEditing(false, animated: true)
-                rightBarButtonItem.title = EditButtonStates.edit.title
-                showHideDeleteButton()
-                transactions.removeAll()
-                transactionIdToHide.removeAll()
-            }
-        
+        if tableView.isEditing {
+            tableView.setEditing(false, animated: true)
+            rightBarButtonItem.title = EditButtonStates.edit.title
+            animateRemoveButton()
+            transactions.removeAll()
+            transactionIdToHide.removeAll()
+        }
+
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.35) { [self] in
             transactionsPresenter?.retrieveTransactions()
         }
     }
-    
+
     func generateRandomError() {
         let error = ErrorsTB.allCases.randomElement()!
         presentAlertOnMainThread(title: "Whoops 🤯", message: error.rawValue, buttonTitle: "OK")
     }
-    
-    
 }

@@ -12,4 +12,5 @@ enum ErrorsTB: String, Error, CaseIterable {
     case unableToCompleteNetworkRequestURLError = "Unable to complete network request due to an invalid URL."
     case invalidResponse = "Invalid response from the server. Please try again."
     case invalidData = "The data received form the server was invalid. Please try again."
+    case unableToRetrieveUrlPath = "Unable to complete network request due to an invalid URL path."
 }
