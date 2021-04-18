@@ -18,8 +18,6 @@ class TransactionsPresenter: TransactionsPresenterProtocol {
         self.menuDelegate = menuDelegate
     }
 
-    func onViewDidLoad() {}
-
     func retrieveTransactions() {
         networkManager.retrieveTransactions { result in
             switch result {
