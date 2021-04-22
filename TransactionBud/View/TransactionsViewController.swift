@@ -12,7 +12,7 @@ class TransactionsViewController: UIViewController, UINavigationControllerDelega
     @IBOutlet var rightBarButtonItem: UIBarButtonItem!
     @IBOutlet var leftBarButtonItem: UIBarButtonItem!
 
-    private var transactionsPresenter: TransactionsPresenter?
+    var transactionsPresenter: TransactionsPresenterProtocol?
     private var transactions: [BudTransactionModel] = []
 
     private var transactionIdToHide: [String] = []
@@ -50,7 +50,7 @@ class TransactionsViewController: UIViewController, UINavigationControllerDelega
     }
 
     func configPresenter() {
-        if transactionsPresenter == nil {
+        if transactionsPresenter == nil {            
             transactionsPresenter = TransactionsPresenter(networkManager: NetworkManager(), networkManagerDelegate: self, menuDelegate: self)
         }
     }

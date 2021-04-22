@@ -13,18 +13,17 @@ class ButtonTB: UIButton {
         configure()
     }
 
-    @available(*, unavailable)
-    required init?(coder _: NSCoder) {
-        // This would handle init via storyboard, which we aren't using.
-        fatalError("init(coder:) has not been implemented")
-    }
 
     convenience init(backgroundColor: UIColor, title: String) {
         self.init(frame: .zero)
         self.backgroundColor = backgroundColor
         setTitle(title, for: .normal)
     }
-
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     private func configure() {
         layer.cornerRadius = 10
         titleLabel?.font = UIFont.preferredFont(forTextStyle: .headline)

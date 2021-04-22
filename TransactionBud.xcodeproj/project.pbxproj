@@ -29,6 +29,10 @@
 		5E58605D262C5C1B007D3036 /* DeleteButtonBottomTB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E58605C262C5C1B007D3036 /* DeleteButtonBottomTB.swift */; };
 		5E586063262C5E5B007D3036 /* UIApplication+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E586062262C5E5B007D3036 /* UIApplication+Ext.swift */; };
 		5E586087262C8281007D3036 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E586086262C8281007D3036 /* String+Ext.swift */; };
+		5E59305126308591007EDF65 /* MockTransactionsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E59305026308591007EDF65 /* MockTransactionsPresenter.swift */; };
+		5E5930562630868E007EDF65 /* MockNetworkManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5930552630868E007EDF65 /* MockNetworkManagerDelegate.swift */; };
+		5E59305B263086F2007EDF65 /* MockMenuDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E59305A263086F2007EDF65 /* MockMenuDelegate.swift */; };
+		5E5930602630875D007EDF65 /* MockNetworkManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E59305F2630875D007EDF65 /* MockNetworkManagerProtocol.swift */; };
 		5E65D439262C906000375243 /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E65D438262C906000375243 /* NetworkManagerTests.swift */; };
 		5E65D446262C916600375243 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E65D445262C916600375243 /* MockURLProtocol.swift */; };
 		5E65D44E262C923200375243 /* BudTransactionApiStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E65D44D262C923200375243 /* BudTransactionApiStub.swift */; };
@@ -90,6 +94,10 @@
 		5E58605C262C5C1B007D3036 /* DeleteButtonBottomTB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteButtonBottomTB.swift; sourceTree = "<group>"; };
 		5E586062262C5E5B007D3036 /* UIApplication+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Ext.swift"; sourceTree = "<group>"; };
 		5E586086262C8281007D3036 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		5E59305026308591007EDF65 /* MockTransactionsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTransactionsPresenter.swift; sourceTree = "<group>"; };
+		5E5930552630868E007EDF65 /* MockNetworkManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkManagerDelegate.swift; sourceTree = "<group>"; };
+		5E59305A263086F2007EDF65 /* MockMenuDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMenuDelegate.swift; sourceTree = "<group>"; };
+		5E59305F2630875D007EDF65 /* MockNetworkManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkManagerProtocol.swift; sourceTree = "<group>"; };
 		5E65D438262C906000375243 /* NetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
 		5E65D445262C916600375243 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
 		5E65D44D262C923200375243 /* BudTransactionApiStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudTransactionApiStub.swift; sourceTree = "<group>"; };
@@ -325,6 +333,10 @@
 			children = (
 				5E65D44D262C923200375243 /* BudTransactionApiStub.swift */,
 				5E65D445262C916600375243 /* MockURLProtocol.swift */,
+				5E59305026308591007EDF65 /* MockTransactionsPresenter.swift */,
+				5E5930552630868E007EDF65 /* MockNetworkManagerDelegate.swift */,
+				5E59305A263086F2007EDF65 /* MockMenuDelegate.swift */,
+				5E59305F2630875D007EDF65 /* MockNetworkManagerProtocol.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -493,9 +505,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E5930602630875D007EDF65 /* MockNetworkManagerProtocol.swift in Sources */,
 				5E65D446262C916600375243 /* MockURLProtocol.swift in Sources */,
 				5E65D439262C906000375243 /* NetworkManagerTests.swift in Sources */,
+				5E5930562630868E007EDF65 /* MockNetworkManagerDelegate.swift in Sources */,
 				5E65D44E262C923200375243 /* BudTransactionApiStub.swift in Sources */,
+				5E59305B263086F2007EDF65 /* MockMenuDelegate.swift in Sources */,
+				5E59305126308591007EDF65 /* MockTransactionsPresenter.swift in Sources */,
 				5E65D4A8262CBC0100375243 /* TransactionsViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
